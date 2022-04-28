@@ -68,8 +68,14 @@ def celcius_to_kelvin(celcius):
 def celcius_to_fahrenheit(celcius):
     return (celcius * 9/5) + 32
 
-def kelvin_to_celcius(kelvin)
+def kelvin_to_celcius(kelvin):
     return kelvin - 273
+
+def fahrenheit_to_kelvin(fahrenheit):
+    return celcius_to_kelvin(fahrenheit_to_celcius(fahrenheit))
+
+def kelvin_to_fahrenheit(kelvin):
+    return celcius_to_fahrenheit(kelvin_to_celcius(kelvin))
 
 if __name__ == "__main__":
     import argparse
